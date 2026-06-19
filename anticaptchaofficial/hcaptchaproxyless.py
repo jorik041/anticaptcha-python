@@ -6,9 +6,6 @@ class hCaptchaProxyless(antiNetworking):
 
     respkey = ""
 
-    def get_user_agent(self):
-        return self.user_agent
-
     def get_respkey(self):
         return self.respkey
 

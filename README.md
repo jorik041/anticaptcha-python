@@ -97,9 +97,11 @@ solver.set_soft_id(0)
 
 g_response = solver.solve_and_return_solution()
 if g_response != 0:
-    print "g-response: "+g_response
+    print("g-response: "+g_response)
+    # user-agent in case you need it:
+    print("user-agent: "+solver.get_user_agent())
 else:
-    print "task finished with error "+solver.error_code
+    print("task finished with error "+solver.error_code)
 ```
 Report previosly solved Recaptcha V2/V3/Enterprise as incorrect:
 ```python
@@ -133,9 +135,11 @@ solver.set_soft_id(0)
 
 g_response = solver.solve_and_return_solution()
 if g_response != 0:
-    print "g-response: "+g_response
+    print("g-response: "+g_response)
+    # user-agent in case you need it:
+    print("user-agent: "+solver.get_user_agent())
 else:
-    print "task finished with error "+solver.error_code
+    print("task finished with error "+solver.error_code)
 ```
 ___
 
@@ -192,6 +196,8 @@ solver.set_website_key("XXXXXXX-XXXX-XXXX-XXXX-XXXXXXXXX")
 token = solver.solve_and_return_solution()
 if token != 0:
     print("result token: "+token)
+    # user-agent in case you need it:
+    print("user-agent: "+solver.get_user_agent())
 else:
     print("task finished with error "+solver.error_code)
 ```
@@ -216,6 +222,8 @@ token = solver.solve_and_return_solution()
 if token != 0:
     print("result tokens: ")
     print(token)
+    # user-agent in case you need it:
+    print("user-agent: "+solver.get_user_agent())
 else:
     print("task finished with error "+solver.error_code)
 ```
@@ -240,6 +248,8 @@ token = solver.solve_and_return_solution()
 if token != 0:
     print("result tokens: ")
     print(token)
+    # user-agent in case you need it:
+    print("user-agent: "+solver.get_user_agent())
 else:
     print("task finished with error "+solver.error_code)
 ```
@@ -273,9 +283,11 @@ solver.set_soft_id(0)
 
 token = solver.solve_and_return_solution()
 if token != 0:
-    print "token: "+token
+    print("token: "+token)
+    # user-agent in case you need it:
+    print("user-agent: "+solver.get_user_agent())
 else:
-    print "task finished with error "+solver.error_code
+    print("task finished with error "+solver.error_code)
 ```
 ____
 
@@ -415,9 +427,11 @@ solver.set_soft_id(0)
 
 token = solver.solve_and_return_solution()
 if token != 0:
-    print "token: "+token
+    print("token: "+token)
+    # user-agent in case you need it:
+    print("user-agent: "+solver.get_user_agent())
 else:
-    print "task finished with error "+solver.error_code
+    print("task finished with error "+solver.error_code)
 ```
 ___
 
@@ -442,9 +456,11 @@ solver.set_soft_id(0)
 
 token = solver.solve_and_return_solution()
 if token != 0:
-    print "token: "+token
+    print("token: "+token)
+    # user-agent in case you need it:
+    print("user-agent: "+solver.get_user_agent())
 else:
-    print "task finished with error "+solver.error_code
+    print("task finished with error "+solver.error_code)
 ```
 ___
 
@@ -476,9 +492,11 @@ solver.set_soft_id(0)
 
 token = solver.solve_and_return_solution()
 if token != 0:
-    print "token: "+token
+    print("token: "+token)
+    # user-agent in case you need it:
+    print("user-agent: "+solver.get_user_agent())
 else:
-    print "task finished with error "+solver.error_code
+    print("task finished with error "+solver.error_code)
 ```
 
 2. When captcha is a standalone widget which is triggered by user's action:
@@ -495,9 +513,11 @@ solver.set_jsapi_script("https://164cb210e333.edge.captcha-sdk.awswaf.com/164cb2
 
 token = solver.solve_and_return_solution()
 if token != 0:
-    print "token: "+token
+    print("token: "+token)
+    # user-agent in case you need it:
+    print("user-agent: "+solver.get_user_agent())
 else:
-    print "task finished with error "+solver.error_code
+    print("task finished with error "+solver.error_code)
 ```
   
 For more details visit [Anti-Captcha Amazon WAF documentation](https://anti-captcha.com/apidoc/task-types/AmazonTaskProxyless).
@@ -515,7 +535,7 @@ from anticaptchaofficial.altchaproxyless import *
 solver = altchaProxyless()
 solver.set_verbose(1)
 solver.set_key("YOUR_KEY")
-solver.set_website_url("https://website.com")
+solver.set_website_url("https://websit[setup.py](..%2Fanticaptcha-publish-package%2Fpackage%2Fsetup.py)e.com")
 # Option 1: set challenge URL
 solver.set_challenge_url("/path/to/challenge/url")
 # Option 2: set challenge JSON grabbed from challenge URL
@@ -528,6 +548,8 @@ solver.set_soft_id(0)
 token = solver.solve_and_return_solution()
 if token != 0:
     print("token: "+token)
+    # user-agent in case you need it:
+    print("user-agent: "+solver.get_user_agent())
 else:
     print("task finished with error "+solver.error_code)
 ```

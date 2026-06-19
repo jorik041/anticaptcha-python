@@ -231,6 +231,9 @@ class antiNetworking:
     def set_comment(self, value):
         self.comment = value
 
+    def get_user_agent(self):
+        return self.user_agent
+
     def set_poolSize(self, pool_connections, pool_maxsize=100):
         adapter = HTTPAdapter(
             pool_connections=pool_connections,

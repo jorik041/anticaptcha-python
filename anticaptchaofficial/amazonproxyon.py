@@ -61,4 +61,6 @@ class amazonProxyon(antiNetworking):
         if task_result == 0:
             return 0
         else:
+            if "userAgent" in task_result["solution"]:
+                self.user_agent = task_result["solution"]["userAgent"]
             return task_result["solution"]["token"]
